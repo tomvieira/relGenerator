@@ -61,7 +61,7 @@ public class PDFGeneratorResource {
             }
             responseBuilder = javax.ws.rs.core.Response.ok((Object) finalFile);
             responseBuilder.type("application/pdf");
-            responseBuilder.header("Content-Disposition", "attachment; filename=restfile.pdf");
+            responseBuilder.header("Content-Disposition", "attachment; filename=relatorio.pdf");
             return responseBuilder.build();
         } catch (Exception e) {
             e.printStackTrace();
